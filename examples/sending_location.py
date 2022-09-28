@@ -11,7 +11,7 @@ if __name__ == "__main__":
         long=103.85,
         name="Singapore",
         address="Singapore",
-        recipient_id="255757294146",
+        recipient_id=getenv("TEST_NUMBER"),
     )
 
     print(response)

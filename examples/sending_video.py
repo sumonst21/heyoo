@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     response = messenger.send_video(
         video="https://www.youtube.com/watch?v=K4TOrB7at0Y",
-        recipient_id="255757xxxxxx",
+        recipient_id=getenv("TEST_NUMBER")
     )
 
     print(response)

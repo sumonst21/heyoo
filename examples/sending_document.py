@@ -8,8 +8,8 @@ if __name__ == "__main__":
     messenger = WhatsApp(token=getenv("TOKEN"), phone_number_id=getenv("PHONE_NUMBER_ID"))
 
     response = messenger.send_document(
-        document="http://www.africau.edu/images/default/sample.pdf",
-        recipient_id="255757294146",
+        document="https://www.africau.edu/images/default/sample.pdf",
+        recipient_id=getenv("TEST_NUMBER"),
     )
 
     print(response)

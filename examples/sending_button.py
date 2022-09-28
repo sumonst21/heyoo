@@ -7,7 +7,7 @@ if __name__ == "__main__":
     messenger = WhatsApp(token=getenv("TOKEN"),phone_number_id=getenv("PHONE_NUMBER_ID"))
 
     response = messenger.send_button(
-        recipient_id="255757xxxxxx",
+        recipient_id=getenv("TEST_NUMBER")
         button={
             "header": "Header Testing",
             "body": "Body Testing",
@@ -16,12 +16,12 @@ if __name__ == "__main__":
                 "button": "Button Testing",
                 "sections": [
                     {
-                        "title": "iBank",
+                        "title": "Some Action",
                         "rows": [
-                            {"id": "row 1", "title": "Send Money", "description": ""},
+                            {"id": "row 1", "title": "Getter", "description": ""},
                             {
                                 "id": "row 2",
-                                "title": "Withdraw money",
+                                "title": "Setter",
                                 "description": "",
                             },
                         ],

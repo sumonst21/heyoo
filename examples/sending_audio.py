@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     response = messenger.send_audio(
         audio="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-        recipient_id="255757xxxxxx",
+        recipient_id=getenv("TEST_NUMBER")
     )
 
     print(response)

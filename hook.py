@@ -14,7 +14,11 @@ VERIFY_TOKEN = os.getenv("VERIFY_TOKEN")
 
 # Logging
 logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("momo.log"),
+        logging.StreamHandler()
+    ]
 )
 
 
